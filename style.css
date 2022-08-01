@@ -40,6 +40,29 @@ a{
     color: #fff;
 }
 
+.button-1 a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+
+ .button-1{  
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px rgb(85, 85, 85);
+    margin-bottom: 20px;
+}
+
+.button-1 a{
+    color: rgb(85, 85, 85);
+}
+
+.button-1:hover{
+    background-color: #ff723f;
+    color: #fff;
+}
+
 /*Navbar*/
 .nav{
     background-color: white;
@@ -147,29 +170,6 @@ a{
     color: #fff;
 }
 
-.header .button-1 a{
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 300;
-    margin-top: 3px;
-}
-
-.header .button-1{  
-    padding: 10px 28px;
-    border-radius: 25px;
-    border: 1px rgb(85, 85, 85);
-    margin-bottom: 20px;
-}
-
-.button-1 a{
-    color: rgb(85, 85, 85);
-}
-
-.button-1:hover{
-    background-color: #ff723f;
-    color: #fff;
-}
-
 /*Collections*/
 #collections{
     margin-top: 60px;
@@ -215,26 +215,29 @@ margin-left: 10px;
 
 
 /* Blogs */
-#blog{
+#blog-banner{
     background: url('./images/offer_img.jpg') center/cover no-repeat;
     margin-top: 60px;
     transition: all 0.5s;
     padding-top: 50px;
 }
-#blog .row{
+#blog-banner{
     min-height: 60vh;
 }
-.blog-content span{
+.blog-content h1, h2, h3{
     font-size: 28px;
-}
-.blog-content h2{
-    font-size: 60px;
     font-family: var(--lg-font);
+    color: #fff;
 }
-.blog-content .button-1{  
-    padding: 10px 28px;
-    border-radius: 25px;
-    border: 1px rgb(85, 85, 85);
-    margin-bottom: 20px;
-    border-color: transparent!important;
+
+.blog-content h2, h3{
+text-transform: capitalize;
+}
+
+.blog-content h1{
+    text-transform: uppercase;
+}
+
+.blog-content{
+    text-align: center;
 }
