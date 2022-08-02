@@ -146,28 +146,51 @@ a{
     .nav{
         padding: 12px 0;
     }
-    .nav-logo{
+    .nav-a a{
         font-size: 28px;
+    }
+    .nav-link a{
+        text-align: center; 
+        float:none;
+        width: 100%;
     }
 }
 
 /*Header*/
 .header{
-    background: url('./images/banner-img-1.jpg') no-repeat top/cover;
+    background: url('./images/banner-img-1.jpg') no-repeat center/cover;
    height: 350px;
-   text-align: center;
    padding: 150px;
    margin-bottom: 50px;
 }
-.header h1{
-    text-transform: uppercase;
+
+.header-content h1, h3{
+    font-size: 28px;
     color: #fff;
-    padding-top: 2;
 }
 
-.header h3{
+.header-content h1{
+    text-transform: uppercase;
+    
+}
+
+.header-content h3{
     text-transform: capitalize;
-    color: #fff;
+}
+
+.header-content{
+    text-align: center;
+}
+
+@media(max-width: 992px){
+    /*.header h1{
+        width: 100%;
+        font-size: 20px;
+    }
+    .header h3{
+        width: 100%;
+        font-size: 25px;
+    }
 }
 
 /*Collections*/
@@ -212,7 +235,11 @@ margin-left: 10px;
     transition: all 0.5s;
 }
 
-
+@media(max-width: 992px){
+    #collections{
+        
+    }
+}
 
 /* Blogs */
 #blog-banner{
@@ -226,12 +253,11 @@ margin-left: 10px;
 }
 .blog-content h1, h2, h3{
     font-size: 28px;
-    font-family: var(--lg-font);
     color: #fff;
 }
 
 .blog-content h2, h3{
-text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .blog-content h1{
